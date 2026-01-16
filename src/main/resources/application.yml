@@ -1,0 +1,23 @@
+# opencd 站点配置
+opencd:
+  cookie: #填写 cookie
+  passkey: #填写 passkey
+
+# 选种配置 : 除了 optionTorrents 字段外，不要修改其他配置，否则吃下载
+torrents:
+  incldead: 1          # 1.活种
+  optionTorrents: 6    # 2.下载过但未做种; 6.未下载过
+  spstate: 2           # 2.免费
+
+# qb 配置
+qb:
+  maxNum: 10           # 最大下载数
+  url: # qb链接，末尾不要带/
+  username: # qb 登录名
+  password: # qb 登录密码
+  path: /downloads/opencd   #保存路径
+  category: opencd      #类型
+  tag: auto_free        #标签
+
+task:
+  intervalSeconds: 600   #定时任务时间间隔，单位秒；（千兆下行 建议10分钟一次，拉10个种子，一小时最多拉60个免费种子，根据网络情况自己调整）
